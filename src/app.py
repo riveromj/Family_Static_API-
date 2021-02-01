@@ -39,13 +39,8 @@ def create_members():
         }
         print(member)
         new_member = jackson_family.add_member(member)
-        print(new_member,"---------------------")
-        #if(new_member == 200):
-         #   return jsonify('Everything ok!'), 200
-        #jackson_family.add_member(body) 
+        print(new_member,"---------------------") 
         return jsonify(member),200
-        #body = request.get_json()
-        #jackson_family.add_member(body)
         return 'ok', 200
     except:
         return jsonify("resp.status_code") , 400
